@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+	<meta charset="utf-8">
+	    <base href="/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="public/style.css">
+	</head>
+	<body ng-app="myApp">
+	    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script type="text/javascript" src="djs/scripts.js"></script>
+		<!-- <div ng-view></div> -->
+		<div style="width: 100%; height: 100px; width: 100%;text-align: center;">
+		    <a href="calc">calculator</a>
+		    <a ui-sref="firstMessage({ a:10, b:20})">Go to first message</a>
+		    <a ui-sref="secondMessage">Go to second message</a>
+		</div>
+		
+		<div ui-view></div>
+		<script type="text/javascript">
+			window.onload=function(){
+				localStorage.setItem("username", "srikanta");
+				localStorage.setItem("password", "mahala");
+			}
+		</script>
+		
+	</body>
+	
+	</html>

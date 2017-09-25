@@ -1,0 +1,15 @@
+<input type="button" value="logout" ng-click="logout()">
+<h1>This is Home page</h1></br>
+<label>Color (null not allowed):
+    <select data-ng-model="myColor" data-ng-options="color for color in colors"></select>
+</label><br>
+<all-color red green blue>all color</all-color>
+Enter a<input type="number" ng-model="a" ><br>
+Enter b<input type="number" ng-model="b" ><br>
+<input type="button" ng-click="submit()" value="submit" name=""><br>
+<!-- <h3 >Loading.. Please wait..</h3> -->
+<div ng-show="isLoading == true" style="width: 100%; height: 100vh; background-color: rgba(158, 158, 158, 0.24); position: absolute; top: 0;">
+    <img src="../image/loader.gif" style="position: absolute; left: 45%; top: 45%; height: 200px; width: 200px;">
+</div>
+
+<a sref="#/first-message">first message</a>

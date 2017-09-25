@@ -1,0 +1,23 @@
+{
+  "name": "experiment",
+  "version": "1.0.0",
+  "description": "\"this is experiment\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "java",
+    "html"
+  ],
+  "author": "srm",
+  "license": "ISC",
+  "devDependencies": {
+    "backbone": "^1.3.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
